@@ -12,8 +12,8 @@ call npx wrangler login
 if errorlevel 1 goto :error
 
 echo.
-echo Deploying to Cloudflare Pages...
-call npx wrangler pages deploy pages-dist --project-name casting-room
+echo Deploying to Cloudflare...
+call npx wrangler deploy
 if errorlevel 1 goto :error
 
 echo.

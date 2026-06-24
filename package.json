@@ -6,6 +6,7 @@
     "build": "bash scripts/build-pages.sh",
     "build:pages": "bash scripts/build-pages.sh",
     "build:sites": "bash scripts/build.sh",
+    "deploy": "npx wrangler deploy",
     "validate": "node scripts/validate-artifact.mjs"
   }
 }

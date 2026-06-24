@@ -23,9 +23,9 @@ npm run build:pages
 npx wrangler pages dev pages-dist
 ```
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare
 
-The Cloudflare dashboard drag-and-drop uploader does not support Pages Functions such as this app's `_worker.js`.
+The project is configured as a Cloudflare Worker and works with Cloudflare's default Git build deployment.
 
 On Windows, double-click `deploy-cloudflare.cmd`. It builds the app, opens Cloudflare authentication, and deploys it.
 
@@ -34,10 +34,16 @@ Or run these commands from the extracted `casting-room` folder:
 ```sh
 npm run build:pages
 npx wrangler login
-npx wrangler pages deploy pages-dist --project-name casting-room
+npx wrangler deploy
 ```
 
-For Git integration, use `npm run build` as the build command and `pages-dist` as the output directory.
+For Git integration, use `npm run build` as the build command and `npx wrangler deploy` as the deploy command.
+
+If Cloudflare asks for a deploy command, use:
+
+```sh
+npm run deploy
+```
 
 ## Sites build and validation
 
