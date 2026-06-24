@@ -1,0 +1,11 @@
+{
+  "name": "casting-room",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bash scripts/build-pages.sh",
+    "build:pages": "bash scripts/build-pages.sh",
+    "build:sites": "bash scripts/build.sh",
+    "validate": "node scripts/validate-artifact.mjs"
+  }
+}

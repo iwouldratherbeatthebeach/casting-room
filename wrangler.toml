@@ -1,0 +1,6 @@
+name = "casting-room"
+compatibility_date = "2026-06-24"
+pages_build_output_dir = "./pages-dist"
+
+[observability]
+enabled = true
